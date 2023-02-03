@@ -8,7 +8,7 @@ use Twig\TwigFilter;
 
 class CollectionJsTwigExtension extends AbstractExtension
 {
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
             new TwigFilter('collection_js_as_string', [$this, 'representAsString'], ['needs_environment' => true]),
