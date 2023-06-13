@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class CollectionJsExtension extends Extension implements PrependExtensionInterface
 {
-    public function prepend(ContainerBuilder $container): void: void
+    public function prepend(ContainerBuilder $container): void
     {
         // Register the Collection Js form theme if TwigBundle is available
         $bundles = $container->getParameter('kernel.bundles');
