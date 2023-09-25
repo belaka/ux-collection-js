@@ -24,7 +24,7 @@ class CollectionJsType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         if (!$options['prototype']) {
             throw new InvalidConfigurationException(sprintf('You must enable prototype for form type %s.', self::class));
